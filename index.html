@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>crystal game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+
+</head>
+<body>
+  <div id="header">
+      <h1>Crystals Collector!</h1>
+  </div>
+  <div id="info">
+     <P>The player will be shown a random number at the start of the game.</P>
+     <p>here are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score. </p>
+     <p> You win the game by matching your total score to the ramdom number, you lose the game if your total score goes above the random number.</p>
+     <p>The value of each crystal is hidden from you until you click on it.</p>
+     <p>Each time when the game starts, the game will change the values of each crystal.</p>
+  </div>
+  <div id="numberToguess">
+    <h2>Number to Guess:</h2>
+    <h2><span id="number-to-guess"></span></h2> 
+  </div>
+  <div id="scoreBoard">
+    <h3>Wins : <span id="WinNum"></span> </h3>
+    <h3>Losses : <span id="LosNum"></span></h3>
+  </div>
+
+  <div id="clearFix">
+  </div>
+
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+  <div id="crystals">
+  </div>
+
+  <div class="result">
+      <h2>Your total score is: <span id="score"></span></h2>
+  </div>
+
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+  
+
+  
+</body>
+</html>
